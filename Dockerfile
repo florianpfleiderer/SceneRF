@@ -4,9 +4,6 @@
 #
 # Copyright (c) 2023 TU Wien
 
-# Use an official PyTorch base image
-# FROM pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
-
 # nvidia cuda base image
 FROM nvidia/cuda:11.6.1-base-ubuntu20.04
 
