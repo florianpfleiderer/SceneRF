@@ -41,6 +41,9 @@ SHELL ["/bin/bash", "--login", "-c"]
 # run updates
 RUN conda update -n base -c defaults conda
 
+# Download pretrained model
+RUN wget https://www.rocq.inria.fr/rits_files/computer-vision/scenerf/scenerf_bundlefusion.ckpt
+
 COPY requirements.txt setup.py ./
 
 # Create a Conda environment
